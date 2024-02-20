@@ -1,0 +1,29 @@
+#include <random>
+#include <iostream>
+
+int main()
+{
+    srand(time(0));
+
+    int A = rand() % 100;
+
+    if (A > 5)
+        std::cout << "A > 5\n";
+    else
+        std::cout << "A <= 5\n";
+
+    int B = 2;
+    int C = 11;
+
+    if (B > 5) {
+        std::cout << "B > 5\n";
+    }
+    else if (C == 11) {
+        std::cout << "B <= 5 but C == 11\n";
+    }
+    else {
+        std::cout << "B <= 5 and C != 11\n";
+    }
+
+    return 0;
+} 
